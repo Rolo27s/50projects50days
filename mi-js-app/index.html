@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <header>
+            <div id="app"></div>
+            <h1>50 Projects in 50 Days</h1>
+        </header>
+        <main>
+            <div class="flex-container" id="flex-container">
+                <!-- Elementos estáticos del HTML a borrar (plantilla). Se generará cada proyecto desde un componente padre.
+                Se generará el div padre con clase "flex-item day{N}". Ese div contendrá un spam con day{N}. El div padre generado tendrá un background img diferente con cada proyecto que sea representativo.
+              
+                En ultima estancia se generarán efectos hover con cursor pointer para dar sensación de interacción. Los elementos se abrirán con target blank -->
+                <a href="./projects/01_Expanding-Cards/index.html" target="_blank" rel="noopener noreferrer" class="flex-item day1">Day 1</a>        
+                <a href="" target="_blank" rel="noopener noreferrer" class="flex-item day2">Day 2</a>
+                <a href="" target="_blank" rel="noopener noreferrer" class="flex-item day3">Day 3</a> 
+        </main>
+        <footer>
+            <div class="flex-footer my-info">
+                <img src="./assets/myself.png" alt="Myself" id="myself" />
+                <div>
+                    <h3>Author, Fran Rodriguez</h3>
+                    <p>
+                      I began my training self-taught following the <a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">roadmap Front-End</a>. <br>
+                      <ul>
+                        Main hard skills currently:
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                      </ul>
+                      I continued my training with an FPS in Web Application Development (DAW) to give an official character to my skills.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-footer socialmedia">
+                <p>Let's work together</p>
+                <a href="https://www.linkedin.com/in/fjrl/" target="_blank" rel="noopener noreferrer">
+                  <img class="img-socialmedia" src="./assets/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://github.com/Rolo27s" target="_blank" rel="noopener noreferrer">
+                  <img class="img-socialmedia" src="./assets/github.png" alt="github">
+                </a>
+            </div>
+        </footer>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
