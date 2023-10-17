@@ -1,22 +1,19 @@
-/* const $container = document.getElementById('flex-container');
+const $shadowDOM = document.createElement('div');
+$shadowDOM.classList.add('cards-container');
 
-const $newDiv = document.createElement('div');
-$newDiv.classList.add('flex-item', 'day1');
+// Función para ingresar imágenes. La extensión de las imágenes serán en jpg
+const insertImage = function (container, src) {
+  const alt = src.split('/')[2];
+  container.innerHTML += `
+    <div class = "card">
+      <img src="${src}.jpg" alt= "${alt}">
+      <figcaption>${alt}</figcaption>
+    </div>
+  `;
+}
 
-const $newSubDiv1 = document.createElement('div');
-const $newImg1 = document.createElement('img');
-const $newText1 = document.createElement('p');
-const $newText1Content = document.createTextNode('Lake and Mountains');
+// Imagen 1.
+insertImage ($shadowDOM, './assets/lake-and-mountains-nature');
 
-$newImg1.setAttribute('src', '../assets/lake-and-mountains-nature.jpg');
-
-$newSubDiv1.appendChild($newImg1);
-$newText1.appendChild($newText1Content);
-$newSubDiv1.appendChild($newText1);
-$newDiv.appendChild($newSubDiv1);
-
-$container.appendChild($newDiv);
-
-// Mejor hacerlo con innerHTML y una sintaxis mas directa estilo HTML.
-// Montar cada proyecto en un HTML nuevo.
- */
+// Virtual o Shadow DOM to DOM. Corregir terminologías.
+document.body.insertAdjacentElement('beforeend', $shadowDOM);

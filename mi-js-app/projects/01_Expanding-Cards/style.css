@@ -1,0 +1,5 @@
+.cards-container {
+  display: flex;
+  padding: 1rem;
+  background-color: rgba(100, 108, 255, 0.5);
+}
