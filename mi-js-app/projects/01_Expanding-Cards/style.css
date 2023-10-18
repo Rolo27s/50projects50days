@@ -11,7 +11,7 @@
 .card {
   display: flex;
   height: 600px;
-  width: auto;
+  flex: 0.25;
   align-items: end;
   border-radius: 1rem;
   padding: 1rem;
@@ -21,11 +21,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+  -webkit-transition: width 0.3s ease-in-out, filter 0.3s ease-in-out; /* Agregado una transición para 'filter' y reducido la duración de 'width' */
 }
 
 .card.expanded {
-  width: 100%;
-  /* transition: all 0.3s ease-in-out; */
+  flex: 7;
+  -webkit-transition: all 2000ms ease-in, width 2000ms ease-in; Agrega la transición para 'width'
 }
 
 .card:hover {
@@ -47,5 +48,6 @@ figcaption:not(.hide) {
 
 /* Clases dinámicas */
 .hide {
-  display: none;
+  flex: 0.25;
+  -webkit-transition: all 2000ms ease-in;
 }
