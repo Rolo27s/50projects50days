@@ -26,7 +26,7 @@
 
 .card.expanded {
   flex: 7;
-  -webkit-transition: all 2000ms ease-in, width 2000ms ease-in; Agrega la transición para 'width'
+  -webkit-transition: all 2000ms ease-in, width 2000ms ease-in; Agrega la transición para 'width';
 }
 
 .card:hover {
