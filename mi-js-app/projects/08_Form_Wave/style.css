@@ -1,0 +1,99 @@
+html {
+    background-color: #497fb3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: all .5s cubic-bezier(0.01, 1.01, 0.56, 1.35);
+}
+
+.form-container {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #244564;
+    width: 350px;
+    height: 420px;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.form-container .give-me-margin {
+    margin: 0rem 2rem;
+    position: relative;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.15rem;
+}
+
+p {
+    color: #eee;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(178, 227, 250, 0.8);
+}
+
+#email, #password {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid #eee;
+    padding: .5rem 0rem;
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+#no-account {
+    margin: 0rem;
+    margin-left: 2rem;
+}
+
+#register {
+    margin: 0rem;
+}
+
+#login {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0;
+    letter-spacing: .1rem;
+    font-size: .95rem;
+    background-color: rgba(178, 227, 250, 0.8);
+    color: rgba(17, 17, 17, 0.9);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#login:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.25);
+    filter: contrast(1.1);
+}
+
+#login:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(178, 227, 250, 0.8) !important;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+#text-email, #text-password {
+    position: absolute;
+    color: rgba(178, 227, 250, 0.1);
+    transition: all .5s cubic-bezier(0.01, 1.01, 0.56, 1.35);
+    font-size: 1.2rem;
+    transform: translateY(0.5rem);
+    z-index: 5;
+    cursor: text;
+}

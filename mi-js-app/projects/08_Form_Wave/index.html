@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>08_Form_wave</title>
+    </head>
+    <body>
+        <form>
+            <fieldset class="form-container">
+                <h2>Please Login</h2>
+                <div class="give-me-margin">
+                    <label for="email" id="text-email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email"/ required>
+                </div>
+                <div class="give-me-margin">
+                    <label for="password" id="text-password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password"/ required>
+                </div>
+                <input class="give-me-margin" type="submit" value="Login" id="login" />
+                <p class="give-me-margin" id="no-account">Don't have an account? <a href="#" id="register">Register</a></p>
+            </fieldset>
+        </form>
+        <script src="code.js"></script>
+    </body>
+</html>
