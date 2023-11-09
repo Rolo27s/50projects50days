@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+  background-color: rgb(33, 134, 192);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, p{
+  color: #FFFFFF;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+span {
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 100;
+  padding: 1rem;
+}
+
+#botella {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.parte {
+  width: 160px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.parte-llena, .vaso-lleno {
+    background-color: rgb(138, 230, 230) !important;
+}
+
+.parte0 {
+  width: 77px;
+  clip-path: polygon(
+    15% 0%,
+    85% 0%,
+    85% 50%,
+    100% 100%,
+    0% 100%,
+    15% 50%
+  );
+  background-color: #ffffff;
+}
+
+.parte1 {
+  width: 128px;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.parte2 {
+  clip-path: polygon(
+    10% 0%,
+    90% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+.parte4 {
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.parte5 {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+
+}
+
+.parte6 {
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+
+}
+
+.parte7 {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+
+}
+
+.parte8 {
+  border-radius: 0rem 0rem 2rem 2rem;
+}
+
+#vasos {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#vasos > * {
+  width: 30px;
+  height: 40px;
+  background-color: #fff;
+  color: black;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#medidor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  z-index: 10;
+  position: absolute;
+}
+
+.cantidad-restante {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-text {
+  font-size: 0.6rem;
+}
+
+.vaso {
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
